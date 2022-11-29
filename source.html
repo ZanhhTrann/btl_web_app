@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/source.css">
+    <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Source code</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#css").css("display","none");
+            $("#html").css("display","flex");
+            $("#bthtml").css({"color":"aliceblue","background":"rgb(255, 77, 0)","border":"aliceblue solid 1px"});
+            $("#btcss").click(function(){
+                $("#btcss").css({"color":"aliceblue","background":"rgb(0, 106, 255)","border":"aliceblue solid 1px"});
+                $("#Siframe").attr("src","text/css/home.text");
+                $("#bthtml").css({"color":"rgb(255, 77, 0)","background":"aliceblue","border":"rgb(255, 77, 0) solid 1px"});
+                $("#html").css("display","none");
+                $("#css").css("display","flex");
+            })
+            $("#bthtml").click(function(){
+                $("#btcss").css({"color":"rgb(0, 106, 255)","background":"aliceblue","border":"rgb(0, 106, 255) solid 1px"});
+                $("#Siframe").attr("src","text/html/index.text");
+                $("#bthtml").css({"color":"aliceblue","background":"rgb(255, 77, 0)","border":"aliceblue solid 1px"});
+                $("#css").css("display","none");
+                $("#html").css("display","flex");
+            });
+            $("#home-html").click(function(){
+                $("#Siframe").attr("src","text/html/index.text");
+            });
+            $("#about-html").click(function(){
+                $("#Siframe").attr("src","text/html/about.text");
+            });
+            $("#teck-html").click(function(){
+                $("#Siframe").attr("src","text/html/teck.text");
+            });
+            $("#source-html").click(function(){
+                $("#Siframe").attr("src","text/html/source.text");
+            });
+            $("#contact-html").click(function(){
+                $("#Siframe").attr("src","text/html/contact.text");
+            });
+
+            // 
+            $("#main-css").click(function(){
+                $("#Siframe").attr("src","text/css/main.text");
+            });
+            $("#nav1-css").click(function(){
+                $("#Siframe").attr("src","text/css/nav1.text");
+            });
+            $("#nav2-css").click(function(){
+                $("#Siframe").attr("src","text/css/nav2.text");
+            });
+            $("#home-css").click(function(){
+                $("#Siframe").attr("src","text/css/home.text");
+            });
+            $("#about-css").click(function(){
+                $("#Siframe").attr("src","text/css/about.text");
+            });
+            $("#teck-css").click(function(){
+                $("#Siframe").attr("src","text/css/teck.text");
+            });
+            $("#source-css").click(function(){
+                $("#Siframe").attr("src","text/css/source.text");
+            });
+            $("#contact-css").click(function(){
+                $("#Siframe").attr("src","text/css/contact.text");
+            });
+        })
+    </script>
+</head>
+<body>
+    <!-- nav bar  -->
+    <nav class="navbar">
+        <a class="nav name" href="index.html">
+            <div class="Name-Logo">
+                <div class="teamname" id="Name-head">
+                    <span></span>
+                    <h1>Tea</h1>
+                </div>
+                <div class="teamname" id="Name-body">
+                    <span></span>
+                    <h1>m 6</h1>
+                </div>
+            </div>
+            <div class="name-title">
+                <span></span>
+                <h6>Phenikaa-web</h6>
+            </div>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <span></span>
+                <a href="index.html" class="btn-menu" id="home">Home</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="About.html" class="btn-menu" id="about">About Us</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="Teck.html" class="btn-menu" id="">Our Teck</a>
+                
+            </div>
+            <div class="btn">
+                <span class="select-btn"></span>
+                <span></span>
+                <a href="source.html" class="btn-menu" id="">Source code</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="contact.html" class="btn-menu" id="">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar -->
+    <!-- body  -->
+    <section id="source">
+        <div class="content">
+            <div class="title">
+                <h1>Source Code</h1>
+            </div>
+            <div id="source_code">
+                <div id="source_bt">
+                    <button class="sbt" id="bthtml"> HTML</button>
+                    <button class="sbt" id="btcss"> CSS</button>
+                    <button class="sbt" id="btgid"><a href="" target="_blank">Github</a></button>
+                </div>
+                <div class="text">
+                    <iframe src="text/html/index.text" frameborder="1" class="sc" id="Siframe"></iframe>
+                    <div class="select">
+                        <div id="html" class="sp">
+                            <button class=" btn-change" id="btn-html">☰</button>
+                            <div class="change" id="text-html">
+                                <ul type="none">
+                                    <li><button class="change-text" id="home-html"><p>home</p></button></li>
+                                    <li><button class="change-text" id="about-html"><p>about</p></button></li>
+                                    <li><button class="change-text" id="teck-html"><p>teck</p></button></li>
+                                    <li><button class="change-text" id="source-html"><p>source</p></button></li>
+                                    <li><button class="change-text" id="contact-html"><p>contact</p></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="css" class="sp">
+                            <button class=" btn-change" id="btn-css">☰</button>
+                            <div class="change" id="text-css">
+                                <ul type="none">
+                                    <li><button class="change-text" id="main-css"><p>main</p></button></li>
+                                    <li><button class="change-text" id="home-css"><p>home</p></button></li>
+                                    <li><button class="change-text" id="about-css"><p>about</p></button></li>
+                                    <li><button class="change-text" id="teck-css"><p>teck</p></button></li>
+                                    <li><button class="change-text" id="source-css"><p>source</p></button></li>
+                                    <li><button class="change-text" id="contact-css"><p>contact</p></button></li>
+                                    <li><button class="change-text" id="nav1-css"><p>nav1</p></button></li>
+                                    <li><button class="change-text" id="nav2-css"><p>nav2</p></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body -->
+    <!-- button -->
+    <div class="bottum">
+        <div class="bot" id="bot-left">
+            <div class="bot-title">
+                <span></span>
+                <h3>Về trang web</h3>
+            </div>
+            <div class="bot-content">
+                <ul type="none">
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="index.html" class="bot-menu" id="h">Home</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="About.html" class="bot-menu" id="au">About us</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="Teck.html" class="bot-menu" id="ot"> Our technology</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="source.html" class="bot-menu" id="sc">Source code</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="contact.html" class="bot-menu" id="c">Contact</a>
+                    </li>
+                </ul>
+                <h5>Trang web là bài báo cáo cuối kỳ của học phần xây dựng ứng dụng web
+                    <br>
+                    <br>
+                    Trang web giới thiệu về thông tin của các thành viên trong nhóm cũng như các ngôn ngữ xử dụng để xây dựng trang web...
+                </h5>
+            </div>
+        </div>
+        <!--  -->
+        <div class="bot" id="bot-mid">
+            <div class="bot-title">
+                <span></span>
+                <h3>Về môn học</h3>
+            </div>
+            <div class="bot-content">
+                <h6>Tổng quan</h6>
+                <p>Học phần này trang bị cho sinh viên các kiến thức cơ bản về ngôn ngữ HTML, JavaScript, CSS, jQuery; cách lập trình xử lý trang web động phía trình duyệt (client) và cách sử dụng phần mềm thiết kế web Dreamweaver.
+                    <br>
+                    Các kiến thức trên giúp cho sinh viên có thể thiết kế được ứng dụng web ở mức cơ bản và là nền tảng để học tốt các môn học lập trình web sau này, đồng thời trang bị cho sinh viên kiến thức và kỹ năng cần thiết để có thể làm đồ án môn học, khóa luận tốt nghiệp và ứng dụng trong thực tế sau khi ra trường.</p>
+                <br>
+                    <p>Giảng viên giảng dạy: Vũ Văn Quang</p>
+            </div>
+        </div>
+        <!--  -->
+        <div class="bot" id="bot-right">
+            <div class="bot-title">
+                <span></span>
+                <h3>Liên hệ</h3>
+            </div>
+            <div class="bot-content">
+                <h6>Thông tin liên hệ các thành viên thành viên</h6>
+                <p>Trần Công Danh Email: 20010760@st.phenikaa-uni.edu.vn <br>SDT: 0372614568</p>
+                <p>Dương Văn Quang Email: 20010793@st.phenikaa-uni.edu.vn <br>SDT: </p>
+                <p>Hoàng Thị Hà Email: 20010893@st.phenikaa-uni.edu.vn <br>SDT: </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>

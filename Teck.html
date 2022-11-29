@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Teck.css">
+    <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn-html").click(function(){
+                $("#p-html").css('display','block');
+            })
+            $("#c-html").click(function(){
+                $("#p-html").css('display','none');
+            })
+            // 
+            $("#btn-css").click(function(){
+                $("#p-css").css('display','block');
+            })
+            $("#c-css").click(function(){
+                $("#p-css").css('display','none');
+            })
+            // 
+            $("#btn-js").click(function(){
+                $("#p-js").css('display','block');
+            })
+            $("#c-js").click(function(){
+                $("#p-js").css('display','none');
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- nav bar  -->
+    <nav class="navbar">
+        <a class="nav name" href="index.html">
+            <div class="Name-Logo">
+                <div class="teamname" id="Name-head">
+                    <span></span>
+                    <h1>Tea</h1>
+                </div>
+                <div class="teamname" id="Name-body">
+                    <span></span>
+                    <h1>m 6</h1>
+                </div>
+            </div>
+            <div class="name-title">
+                <span></span>
+                <h6>Phenikaa-web</h6>
+            </div>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <span></span>
+                <a href="index.html" class="btn-menu" id="home">Home</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="About.html" class="btn-menu" id="about">About Us</a>
+                
+            </div>
+            <div class="btn">
+                <span class="select-btn"></span>
+                <span></span>
+                <a href="Teck.html" class="btn-menu" id="">Our Teck</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="source.html" class="btn-menu" id="">Source code</a>
+                
+            </div>
+            <div class="btn">
+                <span></span>
+                <a href="contact.html" class="btn-menu" id="">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar -->
+    <!-- body  -->
+    <div id="teck">
+        <div class="title">
+            <h1>Our Technolory</h1>
+        </div>
+        <div class="teck">
+            <div class="border-leng">
+                <span id="s1"></span><span id="s2"></span><span id="s3"></span><span id="s4"></span>
+                <div class="t-leng" id="l-html">
+                    <button type="button" class="btn" id="btn-html" ><i class="fab fa-html5 fa-7x" style="color: rgb(255, 71, 71)"></i></button>
+                    <div class="preview" id="p-html">
+                        <button type="button" class="close" id="c-html">X</button>
+                        <iframe src="https://wiki.matbao.net/html-la-gi-nen-tang-lap-trinh-web-cho-nguoi-moi-bat-dau/" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="t-leng" id="l-css">
+                    <button type="button" class="btn" id="btn-css" ><i class="fab fa-css3 fa-6x" style="color: blue"></i></button>
+                    <div class="preview" id="p-css">
+                        <button type="button" class="close" id="c-css">X</button>
+                        <iframe src="https://topdev.vn/blog/css-la-gi/" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="t-leng" id="l-js">
+                    <button type="button" class="btn" id="btn-js"><i class="fab fa-node-js fa-6x" style="color: rgb(255, 238, 0)"></i></button>
+                    <div class="preview" id="p-js">
+                        <button type="button" class="close" id="c-js">X</button>
+                        <iframe src="https://vietnix.vn/javascript-la-gi/" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-title">
+            <h6>Click vào logo ngôn ngữ để xem thông tin cụ thể....</h6>
+        </div>
+    </div>
+    <!-- body -->
+    <!-- button -->
+    <div class="bottum">
+        <div class="bot" id="bot-left">
+            <div class="bot-title">
+                <span></span>
+                <h3>Về trang web</h3>
+            </div>
+            <div class="bot-content">
+                <ul type="none">
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="index.html" class="bot-menu" id="h">Home</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="About.html" class="bot-menu" id="au">About us</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="Teck.html" class="bot-menu" id="ot"> Our technology</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="source.html" class="bot-menu" id="sc">Source code</a>
+                    </li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="contact.html" class="bot-menu" id="c">Contact</a>
+                    </li>
+                </ul>
+                <h5>Trang web là bài báo cáo cuối kỳ của học phần xây dựng ứng dụng web
+                    <br>
+                    <br>
+                    Trang web giới thiệu về thông tin của các thành viên trong nhóm cũng như các ngôn ngữ xử dụng để xây dựng trang web...
+                </h5>
+            </div>
+        </div>
+        <!--  -->
+        <div class="bot" id="bot-mid">
+            <div class="bot-title">
+                <span></span>
+                <h3>Về môn học</h3>
+            </div>
+            <div class="bot-content">
+                <h6>Tổng quan</h6>
+                <p>Học phần này trang bị cho sinh viên các kiến thức cơ bản về ngôn ngữ HTML, JavaScript, CSS, jQuery; cách lập trình xử lý trang web động phía trình duyệt (client) và cách sử dụng phần mềm thiết kế web Dreamweaver.
+                    <br>
+                    Các kiến thức trên giúp cho sinh viên có thể thiết kế được ứng dụng web ở mức cơ bản và là nền tảng để học tốt các môn học lập trình web sau này, đồng thời trang bị cho sinh viên kiến thức và kỹ năng cần thiết để có thể làm đồ án môn học, khóa luận tốt nghiệp và ứng dụng trong thực tế sau khi ra trường.</p>
+                <br>
+                    <p>Giảng viên giảng dạy: Vũ Văn Quang</p>
+            </div>
+        </div>
+        <!--  -->
+        <div class="bot" id="bot-right">
+            <div class="bot-title">
+                <span></span>
+                <h3>Liên hệ</h3>
+            </div>
+            <div class="bot-content">
+                <h6>Thông tin liên hệ các thành viên thành viên</h6>
+                <p>Trần Công Danh Email: 20010760@st.phenikaa-uni.edu.vn <br>SDT: 0372614568</p>
+                <p>Dương Văn Quang Email: 20010793@st.phenikaa-uni.edu.vn <br>SDT: </p>
+                <p>Hoàng Thị Hà Email: 20010893@st.phenikaa-uni.edu.vn <br>SDT: </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function() {
+            document.getElementById('r'+counter).checked=true;
+            counter++;
+            if(counter>2){
+                counter=1;
+            }
+        },5000)
+    </script>
+</body>
+</html>
